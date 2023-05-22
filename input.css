@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face { font-family: Moonstar; src: url('assets/Moonstar.ttf'); }
+@font-face { font-family: CyberCaligraphic; src: url('assets/CyberCaligraphic.ttf'); } 
+@font-face { font-family: SunshineKiddy; src: url('assets/SunshineKiddyFont.ttf'); } 
+html, body {
+  background-color: black;
+  background-image: url('assets/bgstar.gif');
+  cursor: url('assets/cursor-magic.png'), default;
+  font-family: CyberCaligraphic;
+  font-family: CyberCaligraphic;
+  color: gold;
+  margin: 0;
+}
+a {
+  cursor: url('assets/ItemMagic.png'), pointer;
+}
+h1, h2, h3 {
+  font-family: Moonstar;
+}
+h2.vibecamp {
+  font-family: SunshineKiddy;
+}
+.hide-overflow {
+  overflow: hidden;
+}
+p {
+  font-size: large;
+}
