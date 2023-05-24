@@ -1,3 +1,11 @@
+// Check if the user is on a mobile device
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+if (isMobile) {
+  console.log("Script disabled on mobile");
+} else {
+  // Your script code here
+  
+
 //Sparkle Trail and Dust Cursor - https://codepen.io/sarahwfox/pen/pNrYGb
 var colour="random"; // "random" can be replaced with any valid colour ie: "red"...
 var sparkles=100;// increase of decrease for number of sparkles falling
@@ -60,7 +68,9 @@ function animate(){
 
 	if (ie)con.style.top=document.body.scrollTop + 'px';
 
-	for (i = 0; i < n; i++){
+  var maxEmitterHeight = 400; // Adjust this value as needed to set the maximum height of the emitter
+
+	for (i = 0; i < n && y + o < maxEmitterHeight; i++){
 
 		var temp1 = eval(d+a+"dots"+i+n6r+s);
 
@@ -76,8 +86,7 @@ function animate(){
 
 		} 
 		else{
-
-			temp1.top = y+o + 'px';
+			temp1.top = y+o + 3 + 'px';
 			temp1.left = x + 'px';
 		}
 	}
@@ -259,3 +268,5 @@ function newColour() {
 	return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
 }
 // ]]>
+console.log("Script executed on non-mobile devices");
+}

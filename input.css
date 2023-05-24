@@ -5,27 +5,34 @@
 @font-face { font-family: Moonstar; src: url('assets/Moonstar.ttf'); }
 @font-face { font-family: CyberCaligraphic; src: url('assets/CyberCaligraphic.ttf'); } 
 @font-face { font-family: SunshineKiddy; src: url('assets/SunshineKiddyFont.ttf'); } 
-html, body {
-  background-color: black;
-  background-image: url('assets/bgstar.gif');
-  cursor: url('assets/cursor-magic.png'), default;
-  font-family: CyberCaligraphic;
-  font-family: CyberCaligraphic;
-  color: gold;
-  margin: 0;
+
+@layer base {
+  html, body {
+    @apply bg-black;
+    @apply text-slate-200;
+    @apply m-0;
+    background-image: url('assets/bgstar.gif');
+    cursor: url('assets/cursor-magic.png'), default;
+    font-family: CyberCaligraphic;
+  }
+
+  h1, h2, h3 {
+    @apply text-purple-400;
+    @apply leading-normal;
+    @apply tracking-wider;
+    font-family: Moonstar;
+  }
+
+  a {
+    @apply text-yellow-400;
+    cursor: url('assets/cursor-magic2.png'), pointer;
+  }
+
+  p {
+    font-size: large;
+  }
 }
-a {
-  cursor: url('assets/ItemMagic.png'), pointer;
-}
-h1, h2, h3 {
-  font-family: Moonstar;
-}
-h2.vibecamp {
+
+.vibecamp {
   font-family: SunshineKiddy;
-}
-.hide-overflow {
-  overflow: hidden;
-}
-p {
-  font-size: large;
 }
