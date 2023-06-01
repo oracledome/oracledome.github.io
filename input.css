@@ -31,8 +31,12 @@
   p {
     font-size: large;
   }
-}
 
-.vibecamp {
-  font-family: SunshineKiddy;
+  .vibecamp {
+    font-family: SunshineKiddy;
+  }
+
+  .magic8ball {
+    cursor: url('assets/cursor-magic2.png'), pointer;
+  }
 }
