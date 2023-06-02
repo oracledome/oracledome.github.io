@@ -40,3 +40,43 @@
     cursor: url('assets/cursor-magic2.png'), pointer;
   }
 }
+
+@layer components {
+  /* svg wrapper */
+  .credits {
+    position: relative;
+    margin: 32px auto;
+    width: 320px;  
+  }
+  .credits-shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #19f6e8;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  }
+  .credits-pretext {
+    font-family: 'Roboto Condensed';
+    font-size: 12px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: #fff;
+    position: relative;
+  }
+  .credits-text {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 4px;
+    color: #fff;
+    top: -46px;
+    position: relative;
+  }
+  .credits:hover .credits-shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
+}
