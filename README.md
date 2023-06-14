@@ -1,6 +1,3 @@
-npm install -D tailwindcss
-npx tailwindcss init
+VIBECAMP READY
 
 npx tailwindcss -i styles.css -o main.css --watch
-
-todo: https://github.com/tailwindlabs/prettier-plugin-tailwindcss
